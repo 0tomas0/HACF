@@ -1,0 +1,12 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/HACF/.vs/HACF/v15
+/HACF/HACF/HACF/bin
+/HACF/HACF/HACF/obj
+/HACF/HACF/HACF.Vsix/bin
+/HACF/HACF/HACF.Vsix/obj
+/HACF/HACF.Tests/bin
+/HACF/HACF.Tests/obj

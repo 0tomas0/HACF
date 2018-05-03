@@ -16,7 +16,7 @@ namespace HACF.Tests.TestClasses.Analyzers
                                         {
                                             void Foo()
                                             {
-                                                var string a = ""ahoj"";
+                                                string testString = ""ahoj"";
                                             }
                                         }
                                     }";
@@ -33,7 +33,7 @@ namespace HACF.Tests.TestClasses.Analyzers
                                         {
                                             void Foo()
                                             {
-                                                var string a = string.Compare(""ahoj"", ""cau"");
+                                                string testString = string.Compare(""ahoj"", ""cau"");
                                             }
                                         }
                                     }";
@@ -50,7 +50,24 @@ namespace HACF.Tests.TestClasses.Analyzers
                                         {
                                             void Foo()
                                             {
-                                                var stringformat a = ""ahoj"";
+                                                string stringformat = ""ahoj"";
+                                            }
+                                        }
+                                    }";
+            VerifyCSharpDiagnostic(source);
+        }
+
+        [Fact]
+        public void NoDiagnosticForStringTextValue()
+        {
+            const string source = @"using System;
+                                    namespace TestAppp
+                                    {
+                                        class TypeName
+                                        {
+                                            void Foo()
+                                            {
+                                                string testString = ""string.format"";
                                             }
                                         }
                                     }";
