@@ -3,11 +3,10 @@
 ################################################################################
 
 /.vs
-/HACF/.vs/HACF/v15
+/HACF/.vs
 /HACF/HACF/HACF/bin
 /HACF/HACF/HACF/obj
 /HACF/HACF/HACF.Vsix/bin
 /HACF/HACF/HACF.Vsix/obj
 /HACF/HACF.Tests/bin
 /HACF/HACF.Tests/obj
-/HACF/.vs
