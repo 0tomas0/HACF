@@ -16,15 +16,15 @@ namespace HACF.Analyzers
 
         private static void AnalyzeCode(SyntaxNodeAnalysisContext context)
         {
-            CatchClauseSyntax source = (CatchClauseSyntax)context.Node;
-
-            if (source == null) return;
+            if (!(context.Node is CatchClauseSyntax source))
+            {
+                return;
+            }
 
             if (source.Declaration == null)
             {
                 context.ReportDiagnostic(Diagnostic.Create(Rules.Rule[DiagnosticId.CatchWithouException], source.GetLocation()));
             }
-
         }
     }
 }

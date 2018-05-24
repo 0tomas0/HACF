@@ -19,9 +19,10 @@ namespace HACF.Analyzers
 
         private static void AnalyzeCode(SyntaxNodeAnalysisContext context)
         {
-            InvocationExpressionSyntax source = (InvocationExpressionSyntax)context.Node;
-
-            if (source == null) return;
+            if (!(context.Node is InvocationExpressionSyntax source))
+            {
+                return;
+            }
 
             if (source.ToString().ToLower().StartsWith("string.format") &&
                 source.ToString().ToLower().IndexOf("{0}") > 0 &&

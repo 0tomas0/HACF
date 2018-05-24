@@ -16,15 +16,16 @@ namespace HACF.Analyzers
 
         private static void AnalyzeCode(SyntaxNodeAnalysisContext context)
         {
-            ThrowStatementSyntax source = (ThrowStatementSyntax)context.Node;
+            if (!(context.Node is ThrowStatementSyntax source))
+            {
+                return;
+            }
 
-            if (source == null) return;
-
-            var exp = source.Expression;
+            ExpressionSyntax exp = source.Expression;
             if (exp != null)
             {
-                var catchIdentifier = ((CatchClauseSyntax)source.Parent.Parent).Declaration.Identifier;
-                if (catchIdentifier.ToString() == exp.ToString())
+                var catchIdentifier = (source.Parent.Parent as CatchClauseSyntax)?.Declaration.Identifier;
+                if (catchIdentifier?.ToString() == exp.ToString())
                 {
                     context.ReportDiagnostic(Diagnostic.Create(Rules.Rule[DiagnosticId.ThrowOriginalOrInnerException], source.GetLocation()));
                 }

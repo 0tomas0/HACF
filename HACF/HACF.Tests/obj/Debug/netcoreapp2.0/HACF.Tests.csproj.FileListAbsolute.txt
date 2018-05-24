@@ -29,7 +29,7 @@ X:\GITHUB\HACF\HACF\HACF.Tests\bin\Debug\netcoreapp2.0\HACF.Tests.dll
 X:\GITHUB\HACF\HACF\HACF.Tests\bin\Debug\netcoreapp2.0\HACF.Tests.pdb
 X:\GITHUB\HACF\HACF\HACF.Tests\bin\Debug\netcoreapp2.0\HACF.dll
 X:\GITHUB\HACF\HACF\HACF.Tests\bin\Debug\netcoreapp2.0\HACF.pdb
-X:\GITHUB\HACF\HACF\HACF.Tests\obj\Debug\netcoreapp2.0\HACF.Tests.csprojResolveAssemblyReference.cache
+X:\GITHUB\HACF\HACF\HACF.Tests\obj\Debug\netcoreapp2.0\HACF.Tests.csprojAssemblyReference.cache
 X:\GITHUB\HACF\HACF\HACF.Tests\obj\Debug\netcoreapp2.0\HACF.Tests.csproj.CoreCompileInputs.cache
 X:\GITHUB\HACF\HACF\HACF.Tests\obj\Debug\netcoreapp2.0\HACF.Tests.AssemblyInfoInputs.cache
 X:\GITHUB\HACF\HACF\HACF.Tests\obj\Debug\netcoreapp2.0\HACF.Tests.AssemblyInfo.cs
